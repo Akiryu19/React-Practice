@@ -1,0 +1,28 @@
+.BoxForm {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.BoxForm div {
+  margin-top: 10px;
+
+  font-weight: bold;
+}
+
+.BoxForm div input {
+  padding: 5px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.BoxForm button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 4px 10px;
+  background-color: #4c9da0;
+  border: 2px solid #46898b;
+  color: #fff;
+}

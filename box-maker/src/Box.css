@@ -1,0 +1,19 @@
+.Box {
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+.Box button {
+  margin-top: 10px;
+  border: none;
+  background-color: #f76835;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #fd9e0e;
+}
+
+.Box div {
+  border-radius: 5px;
+}
