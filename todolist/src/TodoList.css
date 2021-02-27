@@ -1,0 +1,13 @@
+.TodoList {
+  background-color: #fff;
+  padding: 4em 4em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  max-width: 80%;
+}
+
+.TodoList h1 {
+  text-align: center;
+  color: #c7542a;
+  margin-bottom: 1em;
+}

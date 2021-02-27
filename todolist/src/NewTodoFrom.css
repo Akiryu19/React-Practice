@@ -1,0 +1,20 @@
+.NewTodoFrom {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.NewTodoFrom input {
+  width: 70%;
+  margin-right: 5px;
+  padding: 5px;
+}
+.NewTodoFrom button {
+  padding: 5px;
+  background-color: #da6033;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+}

@@ -1,0 +1,17 @@
+.Todo {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ffdccf;
+}
+
+.btn {
+  border: none;
+  color: #da6033;
+  background-color: #fff;
+}
+
+.edit {
+  margin: 0 10px 0 20px;
+}
+input[type='checkbox'] {
+  margin-right: 20px;
+}
