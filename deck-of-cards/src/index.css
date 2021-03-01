@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(14, 14, 19);
+  margin: 0;
+  font-family: 'Vollkorn', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
