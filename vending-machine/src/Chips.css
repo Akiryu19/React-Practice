@@ -1,0 +1,25 @@
+.Chips {
+  margin-top: 60px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.Chips-img {
+  width: 20em;
+  margin: 60px;
+}
+
+.Chips-btn {
+  outline: none;
+  background-color: #02726c;
+  color: #fff;
+  padding: 0.4em 2em;
+  border: 2px solid #227974;
+  border-radius: 5px;
+}
+
+.Chips a {
+  display: block;
+  margin-top: 20px;
+}
