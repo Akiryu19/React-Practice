@@ -4,8 +4,10 @@
   background: center/cover no-repeat url('./VendingMachine.png');
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
+/*  
 .VendingMachine-title {
   width: 40%;
   text-align: left;
@@ -13,4 +15,4 @@
   padding: 2em;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
-}
+} */

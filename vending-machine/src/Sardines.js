@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Message from './Message';
 
 const Sardines = () => {
   return (
     <div>
-      <h1>Sardines</h1> <Link to="/">Back</Link>
+      <Message>
+        <h1>Sardines</h1> <Link to="/">Back to Vending Machine</Link>
+      </Message>
     </div>
   );
 };

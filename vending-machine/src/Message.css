@@ -1,0 +1,35 @@
+.Message {
+  padding: 2em;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Message a,
+.Message button {
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #017771;
+  background-color: #1bb4ad;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.Message a:hover {
+  background-color: #02968e;
+}
+
+.Message button {
+  background-color: #e0ae09;
+  border-color: #d37f00;
+}
