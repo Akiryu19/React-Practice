@@ -8,19 +8,30 @@ const JokeList = () => {
   const numJokesToget = 10;
   const initialVal = JSON.parse(window.localStorage.getItem('jokes') || '[]');
   const [jokes, setJokes] = useState(initialVal);
-  //   const [isLoading, setIsLoading] = useState(false);
+  const seenJokes = new Set(jokes.map((joke) => joke.text));
 
+  //   console.log(seenJokes);
   const getJokes = async () => {
-    let jokes = [];
-    while (jokes.length < numJokesToget) {
-      let res = await axios.get('https://icanhazdadjoke.com/', {
-        headers: { Accept: 'application/json ' },
-      });
-      jokes.push({ id: uuidv4(), text: res.data.joke, vote: 0 });
-    }
-    setJokes((oldJokes) => [...oldJokes, ...jokes]); //get more jokes
+    try {
+      let jokes = [];
+      while (jokes.length < numJokesToget) {
+        let res = await axios.get('https://icanhazdadjoke.com/', {
+          headers: { Accept: 'application/json ' },
+        });
+        let newJoke = res.data.joke;
+        if (!seenJokes.has(newJoke)) {
+          jokes.push({ id: uuidv4(), text: res.data.joke, vote: 0 });
+        } else {
+          console.log('found duplicated');
+          console.log(newJoke);
+        }
+      }
+      setJokes((oldJokes) => [...oldJokes, ...jokes]); //get more jokes
 
-    window.localStorage.setItem('jokes', JSON.stringify(jokes));
+      window.localStorage.setItem('jokes', JSON.stringify(jokes));
+    } catch (e) {
+      alert('something went wrong...');
+    }
   };
 
   useEffect(() => {
