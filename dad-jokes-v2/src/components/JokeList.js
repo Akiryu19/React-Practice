@@ -63,6 +63,8 @@ const JokeList = () => {
       </div>
     );
   }
+  let sortedJokes = jokes.sort((a, b) => b.vote - a.vote);
+
   return (
     <div className="JokeList">
       <div className="JokeList-sidebar">
@@ -79,7 +81,7 @@ const JokeList = () => {
       </div>
 
       <div className="JokeList-jokes">
-        {jokes.map((joke) => (
+        {sortedJokes.map((joke) => (
           <Joke
             key={joke.id}
             joke={joke}
