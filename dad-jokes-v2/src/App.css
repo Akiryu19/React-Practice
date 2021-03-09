@@ -1,0 +1,17 @@
+.App {
+  font-family: 'Rubik', sans-serif;
+  color: #5e6c7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ff97cb;
+  background: linear-gradient(60deg, #fd82bf 50%, #95edff 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
