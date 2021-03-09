@@ -37,12 +37,64 @@
   margin: 10px;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.fa-arrow-up:hover {
+  animation: move-up 0.75s ease-out;
+  color: forestgreen;
+}
+.fa-arrow-down:hover {
+  animation: move-up 0.75s ease-out;
+  color: red;
 }
 
 .Joke-smiley {
   font-size: 2.5rem;
   margin-left: auto;
   border-radius: 50%;
-
   box-shadow: rgba(35, 10, 80, 0.2) 0px 10px 20px;
+}
+.Joke-smiley:hover {
+  animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes move-up {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes move-down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(3px);
+  }
 }
